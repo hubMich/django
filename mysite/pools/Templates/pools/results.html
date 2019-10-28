@@ -1,0 +1,20 @@
+{% extends "pools/base.html" %}
+{% block title %}
+Wyniki
+{% endblock %}
+{% block content %}
+
+Wyniki dla pytania <br><br>
+{{question.id}}. {{question.question_text}}
+<br><br>
+<ul>
+ {% for  choice in question.choice_set.all %}
+    <li>{{choice.choice_text}} - {{choice.votes}}</li>
+{% endfor %}
+
+
+
+</ul>
+
+<a href="{% url 'pools:detail' question.id %}">Chcesz zagłosować ponownie?</a>
+{% endblock %}
