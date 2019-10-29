@@ -1,0 +1,243 @@
+[
+{
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+        "created": "2019-10-29T11:01:57.187Z",
+        "modified": "2019-10-29T11:03:15.687Z",
+        "title": "Pan Tadeusz",
+        "ISBN": "2345234523452435",
+        "cover_type": "soft",
+        "pages": 400,
+        "cover_image": "covers/2019/10/29/Adam_Mickiewicz_by_Jan_Mieczkowski.jpg",
+        "description": "53425435",
+        "pub_date": "2019-10-29",
+        "loan_data": "2019-10-29T11:01:26Z",
+        "is_avaiable": true,
+        "author": [
+            1
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+        "created": "2019-10-29T13:01:08.956Z",
+        "modified": "2019-10-29T13:01:08.956Z",
+        "title": "W pustyni i w puszczy",
+        "ISBN": "24314234132434",
+        "cover_type": "soft",
+        "pages": 100,
+        "cover_image": "",
+        "description": "1234132412341234",
+        "pub_date": null,
+        "loan_data": "2019-10-29T12:58:13Z",
+        "is_avaiable": true,
+        "author": [
+            2,
+            32
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 13,
+    "fields": {
+        "created": "2019-10-29T13:49:59.812Z",
+        "modified": "2019-10-29T13:49:59.851Z",
+        "title": "P\u00f3\u0142noc przerwa pa\u017adziernik fala zwierz\u0119.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 9169878,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:49:59.812Z",
+        "is_avaiable": true,
+        "author": [
+            14
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 14,
+    "fields": {
+        "created": "2019-10-29T13:49:59.851Z",
+        "modified": "2019-10-29T13:49:59.870Z",
+        "title": "Dno wrzesie\u0144 wielki.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 178,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:49:59.851Z",
+        "is_avaiable": true,
+        "author": [
+            2
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 15,
+    "fields": {
+        "created": "2019-10-29T13:49:59.870Z",
+        "modified": "2019-10-29T13:49:59.889Z",
+        "title": "Pi\u0119kny raz prawo wyj\u0105tkowy.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 40778008,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:49:59.870Z",
+        "is_avaiable": true,
+        "author": [
+            3
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 16,
+    "fields": {
+        "created": "2019-10-29T13:49:59.909Z",
+        "modified": "2019-10-29T13:49:59.909Z",
+        "title": "Dziura nadawa\u0107 opu\u015bci\u0107 danie nikt \u015bmier\u0107.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 12,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:49:59.909Z",
+        "is_avaiable": true,
+        "author": [
+            3
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 17,
+    "fields": {
+        "created": "2019-10-29T13:49:59.928Z",
+        "modified": "2019-10-29T13:49:59.947Z",
+        "title": "Koniec wyr\u00f3b na pewno martwy fragment nauczyciel.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 0,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:49:59.928Z",
+        "is_avaiable": true,
+        "author": [
+            13
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 18,
+    "fields": {
+        "created": "2019-10-29T13:49:59.947Z",
+        "modified": "2019-10-29T13:49:59.967Z",
+        "title": "Doskona\u0142y angielski poeta. Pogl\u0105d zdrowie poza.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 279277172,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:49:59.947Z",
+        "is_avaiable": true,
+        "author": [
+            31
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 19,
+    "fields": {
+        "created": "2019-10-29T13:49:59.967Z",
+        "modified": "2019-10-29T13:49:59.986Z",
+        "title": "Po\u0142\u0105czenie choroba ich troch\u0119 forma Estonia.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 9504910,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:49:59.967Z",
+        "is_avaiable": true,
+        "author": [
+            11
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 20,
+    "fields": {
+        "created": "2019-10-29T13:50:00.006Z",
+        "modified": "2019-10-29T13:50:00.006Z",
+        "title": "P\u0142e\u0107 80 Indie walka kontynent.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 39314,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:50:00.006Z",
+        "is_avaiable": true,
+        "author": [
+            29
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 21,
+    "fields": {
+        "created": "2019-10-29T13:50:00.025Z",
+        "modified": "2019-10-29T13:50:00.044Z",
+        "title": "Rozmowa korzy\u015b\u0107 lek wp\u0142yw zadanie pisa\u0107.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 825721761,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:50:00.025Z",
+        "is_avaiable": true,
+        "author": [
+            16
+        ]
+    }
+},
+{
+    "model": "books.book",
+    "pk": 22,
+    "fields": {
+        "created": "2019-10-29T13:50:00.044Z",
+        "modified": "2019-10-29T13:50:00.064Z",
+        "title": "P\u0142yta Wielka Brytania obowi\u0105zek.",
+        "ISBN": "",
+        "cover_type": "soft",
+        "pages": 5814519,
+        "cover_image": "",
+        "description": null,
+        "pub_date": null,
+        "loan_data": "2019-10-29T13:50:00.044Z",
+        "is_avaiable": true,
+        "author": [
+            18
+        ]
+    }
+}
+]

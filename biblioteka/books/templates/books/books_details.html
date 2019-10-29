@@ -1,0 +1,45 @@
+{% extends "books/base.html" %}
+
+
+{% block title %}
+Lista książek
+{% endblock %}
+{% block content %}
+Szczegóły książki
+
+<table class="table ">
+    <tr>
+    <th>Tytuł</th>
+        <td>{{book.title}}</td>
+    </tr>
+<tr>
+    <th>Autorzy</th>
+        <td>{{book.authors}}</td>
+    </tr>
+      <th>Okładka</th>
+
+        <td>
+            {% if book.cover_image %}<img width="100px" src="{{ book.cover_image.url }}"></td> {% endif %}
+    </tr>
+     </tr>
+      <th>Czy dostępna</th>
+
+        <td>
+            <form method="post" action="">
+                {% csrf_token %}
+             {% if book.is_avaiable %}
+                <input type="submit" name="loan" class="btn btn-danger" value="Wypożycz">
+            {% else %}
+                <input type="submit" name="loan_back" class="btn btn-danger" value="Zwróć">
+            {% endif %}
+
+            </form>
+            {% if book.is_avaiable %}
+                <a href="{% url 'books:loan' book.id %}" class="btn btn-success">Wypożycz</a>
+            {% else %}
+                <a href="{% url 'books:loan_back' book.id %}" class="btn btn-success">Zwróć</a>
+            {% endif %}
+    </tr>
+</table>
+
+{% endblock %}

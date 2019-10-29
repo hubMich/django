@@ -1,7 +1,10 @@
+
+
 from django.core.paginator import Paginator
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.urls import reverse
+from django.utils import timezone
 
 from .models import Question, Choice
 from django.template import loader
@@ -36,7 +39,9 @@ def detail(request, question_id):
     #    questions = Question.objects.get(pk=question_id)
     # except Question.DoesNotExist:
     #    raise Http404("Question nie istnieje")
-    questions = get_object_or_404(Question, pk=question_id)
+    questions = get_object_or_404(Question, pk=question_id, pub_data__lt=timezone.now())
+    #if questions.pub_data > timezone.now():
+            #raise Http404("Zasób nie istnieje")
     # output += str(questions)
     # return HttpResponse(output)
     return render(
