@@ -1,14 +1,10 @@
 from django.http import HttpResponse, JsonResponse, Http404
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.parsers import JSONParser
 from rest_framework.views import APIView
-
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
-from rest_framework.decorators import api_view
 from rest_framework import status, mixins, generics
 from rest_framework.response import Response
-# Create your views here.
+
 
 class SnippetList(
     mixins.ListMOdelMixin,
@@ -23,9 +19,6 @@ class SnippetList(
 
     def post(self,request, *args, **kwargs):
         return self.post(request, *args, **kwargs)
-
-
-
 
 class SnippetDetail(APIView):
     def get_object(self,pk):
