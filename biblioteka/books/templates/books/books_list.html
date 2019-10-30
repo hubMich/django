@@ -5,6 +5,13 @@
 Lista książek
 {% endblock %}
 {% block content %}
+<form>
+
+    <input name="q" type="text">
+    <button type="submit" class="btn btn-success">Szukaj</button>
+
+</form>
+
 Lista książek <br><br>
 
 <table class="table table-stripped">
@@ -22,11 +29,13 @@ Lista książek <br><br>
     <tr>
         <td><a href="{% url 'books:details' book.id %}">{{ book.title }}</a></td>
         <td> {{ book.authors }}</td>
-        <td>
+ <td>
         {% if book.cover_image %}
+
             <img width="100px" src="{{ book.cover_image.url }}">
+
         {% endif %}
-        </td>
+ </td>
         <td>{{book.is_avaiable }}</td>
     </tr>
 

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,14 +38,39 @@ li a:hover {
   text-align: center;
 }
 </style>
+
+   {% load bootstrap4 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
 </head>
 <body>
 
 <ul>
   <li><a  href="/">Home</a></li>
   <li><a href="books">Lista książek</a></li>
-    <li><a href="authors">Lista autorów</a></li>
 </ul>
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <p class="alert alert-danger">{{ mojedane }}</p>
+    {% if messages %}
+
+      {% for message in messages %}
+
+      <p class="alert alert-{{message.tags}}">{{ message }}</p>
+
+      {% endfor %}
+      {% endif %}
+
+    </div>
+  </div>
+
+</div>
+
+
 {% block content %}
 {% endblock %}
 

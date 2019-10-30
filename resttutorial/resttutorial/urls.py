@@ -1,4 +1,4 @@
-"""biblioteka URL Configuration
+"""resttutorial URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -15,19 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
-from django.views.generic import TemplateView
-from django.contrib import admin
-from django.urls import path
-import accounts.views
-from books.views import author_form_test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name="books/index.html")),
-    path('books', include("books.urls")),
-    path('logout/', accounts.views.logout_user, name="logout"),
-    path('login/', accounts.views.login_user, name="login"),
-    path('testform/', author_form_test),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('snippets/', include('snippets.urls'))
+]

@@ -25,6 +25,7 @@ Szczegóły książki
       <th>Czy dostępna</th>
 
         <td>
+            {% if request.user.is_authenticated %}
             <form method="post" action="">
                 {% csrf_token %}
              {% if book.is_avaiable %}
@@ -33,13 +34,16 @@ Szczegóły książki
                 <input type="submit" name="loan_back" class="btn btn-danger" value="Zwróć">
             {% endif %}
 
-            </form>
+             </form>
             {% if book.is_avaiable %}
                 <a href="{% url 'books:loan' book.id %}" class="btn btn-success">Wypożycz</a>
             {% else %}
                 <a href="{% url 'books:loan_back' book.id %}" class="btn btn-success">Zwróć</a>
             {% endif %}
-    </tr>
+            {% endif %}
+
+
+    </td>
 </table>
 
 {% endblock %}
